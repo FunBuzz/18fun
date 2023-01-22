@@ -6,7 +6,7 @@ shareBtn.addEventListener('click', event => {
   if (navigator.share) {
     // Browser supports native share api
     navigator.share({
-      text: 'I have special surprise for you: ',
+      text: 'I have special surprise for you: This will expire in next 60 minutes',
       url: 'index.html'
     }).then(() => {
       console.log('Thanks for sharing!');
